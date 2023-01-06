@@ -1,9 +1,7 @@
 import Head from 'next/head';
-import Navigation from '../components/common/navigation';
-import SocialLinks from '../components/common/social-links';
 import AppLayout from '../components/layouts/AppLayout';
 
-export default function Home() {
+function About() {
   return (
     <>
       <Head>
@@ -13,7 +11,9 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <AppLayout>HOME</AppLayout>
+      <AppLayout>About</AppLayout>
     </>
   );
 }
+
+export default About;
