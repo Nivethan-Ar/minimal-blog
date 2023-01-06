@@ -2,7 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {}
+body::-webkit-scrollbar {
+  width: .6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #212121;
+  /* margin-block: .4rem; */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(119, 114, 114);
+  border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  opacity: 0.3;
+}
+
+:root {
+  background-color: #212121;
+}
 
 * {
   box-sizing: border-box;
