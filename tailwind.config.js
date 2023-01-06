@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         main: ['var(--font-montserrat)'],
-        sub: ['var(--font-inter)']
+        sub: ['var(--font-inter)'],
+        lex: ['var(--font-lexend)']
       },
     },
     plugins: [],
