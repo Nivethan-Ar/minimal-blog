@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Footer from '../common/footer';
 import Navigation from '../common/navigation';
 import SocialLinks from '../common/social-links';
 
@@ -16,9 +17,10 @@ function AppLayout(props: Props) {
         <SocialLinks />
 
         <section
-          className={`${className} py-20 text-justify font-main font-normal border-gray-800`}
+          className={`${className} flex flex-col pt-20 text-justify font-main font-normal border-gray-800`}
         >
           {children}
+          <Footer />
         </section>
         <Navigation />
       </main>
