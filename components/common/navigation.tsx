@@ -11,7 +11,7 @@ export default function Navigation() {
           <Link href={'/about'}>about</Link>
         </li>
         <li className='hover:underline underline-offset-8'>
-          <Link href={'/insights/react'}>Insights</Link>
+          <Link href={'/blog/react'}>blog</Link>
         </li>
       </ul>
     </nav>
