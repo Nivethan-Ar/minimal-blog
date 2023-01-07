@@ -1,9 +1,12 @@
 import Head from 'next/head';
-import Navigation from '../../components/common/navigation';
-import SocialLinks from '../../components/common/social-links';
+import { useState } from 'react';
 import AppLayout from '../../components/layouts/AppLayout';
+import { data } from '../../data/react-docs';
 
 function React() {
+  const [postCount] = useState(0);
+  const blog = data[postCount];
+
   return (
     <>
       <Head>
@@ -13,30 +16,36 @@ function React() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <AppLayout>
-        <section className='border-x- py-20 text-justify font-main font-normal border-gray-800'>
-          <div className='flex flex-col'>
+      <AppLayout classNames='font-main font-normal border-gray-800'>
+        <div className='flex flex-col gap-y-6'>
+          <div>
             <p>Jan 6, 2023</p>
-            <h1 className='mt-1 mb-3 text-2xl font-main font-bold uppercase'>
-              Section 1: About React
+            <h1 className='mt-1 text-2xl font-main font-bold uppercase'>
+              Section 1: {blog.section}
             </h1>
-            <h2 className='text-xl mb-3 font-medium font-sub  '>
-              Installation
-            </h2>
-
-            <p className='font-medium font-sub'>
-              1. The docs use CodeSandbox for their interactive code examples.
-            </p>
-            <p>
-              {' '}
-              React has been designed from the start for gradual adoption. You
-              can use as little or as much React as you need. Whether you want
-              to get a taste of React, add some interactivity to an HTML page,
-              or start a complex React-powered app, this section will help you
-              get started.
-            </p>
           </div>
-        </section>
+          <h2 className='text-lg capitalize font-medium font-sub  '>
+            {blog.title}
+          </h2>
+
+          <div className='flex flex-col gap-y-6 text-justify'>
+            {blog.body.map((block, i) => (
+              <div key={i} className='relative'>
+                <h3 className={`text-xl mb-2 font-lex`}>{`${
+                  i + 1 + '. ' + block.subHeading
+                }`}</h3>
+                <div className='flex flex-col gap-y-4'>
+                  {block.paragraphs.map((paragraph, i) => (
+                    <div key={i} className='flex flex-col gap-y-2'>
+                      <p className='' dangerouslySetInnerHTML={paragraph} />
+                      <code className=''>{paragraph.code}</code>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </AppLayout>
     </>
   );
