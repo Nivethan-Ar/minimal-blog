@@ -16,7 +16,7 @@ function React() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <AppLayout classNames='font-main font-normal border-gray-800'>
+      <AppLayout className='font-main font-normal border-gray-800'>
         <div className='flex flex-col gap-y-6'>
           <div>
             <p>Jan 6, 2023</p>

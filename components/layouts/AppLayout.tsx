@@ -4,11 +4,11 @@ import SocialLinks from '../common/social-links';
 
 type Props = {
   children: ReactNode;
-  classNames?: string;
+  className?: string;
 };
 
 function AppLayout(props: Props) {
-  const { children, classNames } = props;
+  const { children, className } = props;
 
   return (
     <>
@@ -16,7 +16,7 @@ function AppLayout(props: Props) {
         <SocialLinks />
 
         <section
-          className={`${classNames} py-20 text-justify font-main font-normal border-gray-800`}
+          className={`${className} py-20 text-justify font-main font-normal border-gray-800`}
         >
           {children}
         </section>

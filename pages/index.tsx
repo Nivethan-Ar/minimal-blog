@@ -13,7 +13,9 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <AppLayout>HOME</AppLayout>
+      <AppLayout className='flex bg-red-400'>
+        <div></div>
+      </AppLayout>
     </>
   );
 }
