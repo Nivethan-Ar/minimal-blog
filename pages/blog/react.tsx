@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import AppLayout from '../../components/layouts/AppLayout';
-import { data } from '../../data/react-docs';
+import BlogNavigation from '../../components/specific/blog/blog-navigation';
+import { reactBlogData } from '../../data/react-docs';
 
 function React() {
-  const [postCount] = useState(0);
-  const blog = data[postCount];
+  const [postNumber, setPostNumber] = useState(0);
+  const blog = reactBlogData[postNumber];
 
   return (
     <>
@@ -45,6 +46,10 @@ function React() {
               </div>
             ))}
           </div>
+          <BlogNavigation
+            postNumber={postNumber}
+            setPostNumber={setPostNumber}
+          />
         </div>
       </AppLayout>
     </>
