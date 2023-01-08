@@ -15,7 +15,9 @@ function NavButton(props: Props) {
     if (btnLabel === 'next') {
       setPostNumber(postNumber + 1);
     }
-    setPostNumber(postNumber - 1);
+    if (btnLabel === 'previous') {
+      setPostNumber(postNumber - 1);
+    }
   };
 
   return (

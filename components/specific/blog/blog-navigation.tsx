@@ -10,7 +10,7 @@ interface Props {
 function BlogNavigation(props: Props) {
   const { postNumber, setPostNumber } = props;
   let previousTitle =
-    data[postNumber - 1] === undefined ? '' : data[postNumber + 1].title;
+    data[postNumber - 1] === undefined ? '' : data[postNumber - 1].title;
 
   let nextTitle =
     data[postNumber + 1] === undefined ? '' : data[postNumber + 1].title;
@@ -18,7 +18,7 @@ function BlogNavigation(props: Props) {
   return (
     <div className='flex gap-x-16 uppercase border-t-4 font-lex border-[#424242] pt-12 mt-6'>
       {/* Previous */}
-      {previousTitle && (
+      {previousTitle ? (
         <NavButton
           titlePreview={previousTitle}
           btnLabel='previous'
@@ -26,10 +26,12 @@ function BlogNavigation(props: Props) {
           postNumber={postNumber}
           setPostNumber={setPostNumber}
         />
+      ) : (
+        <div className='flex-1' />
       )}
 
       {/* Next */}
-      {nextTitle && (
+      {nextTitle ? (
         <NavButton
           titlePreview={nextTitle}
           btnLabel='next'
@@ -37,6 +39,8 @@ function BlogNavigation(props: Props) {
           postNumber={postNumber}
           setPostNumber={setPostNumber}
         />
+      ) : (
+        <div className='flex-1' />
       )}
     </div>
   );
