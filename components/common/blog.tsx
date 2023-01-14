@@ -15,7 +15,7 @@ function Blog(props: Props) {
 
   return (
     <AppLayout className='font-main font-normal border-gray-800'>
-      <div className='flex flex-col gap-y-6'>
+      <div className='flex flex-col gap-y-6 h-full'>
         <div>
           <p>Jan 6, 2023</p>
           <h1 className='mt-1 text-2xl font-main font-bold uppercase'>
@@ -26,7 +26,7 @@ function Blog(props: Props) {
           {data.title}
         </h2>
 
-        <div className='flex flex-col gap-y-6 text-justify'>{children}</div>
+        <div className='flex flex-col gap-y-6 text-justify flex-1'>{children}</div>
         <BlogNavigation postNumber={postNumber} setPostNumber={setPostNumber} />
       </div>
     </AppLayout>

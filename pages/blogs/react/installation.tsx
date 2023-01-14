@@ -4,7 +4,6 @@ import ContentBlock from '../../../components/common/content-block';
 import { installation as data } from '../../../data/react-docs';
 
 function Installation() {
-  const blog = {};
   return (
     <>
       <Head>
@@ -31,6 +30,7 @@ function Installation() {
             and parcel
           </p>
         </ContentBlock>
+
       </Blog>
     </>
   );
