@@ -5,7 +5,7 @@ import { Data } from '../types';
 export const installation: Data = {
   section: 'getting started',
   title: 'installation',
-  link: 'installation',
+  link: 'react/installation',
   body: [
     {
       subHeading: 'React is a UI library & not a framework',
@@ -78,7 +78,7 @@ export const installation: Data = {
 export const quick: Data = {
   section: 'getting started',
   title: 'quick start',
-  link: 'quick-start',
+  link: 'react/quick-start',
   body: [
     {
       subHeading:

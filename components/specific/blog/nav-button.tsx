@@ -23,7 +23,8 @@ function NavButton(props: Props) {
     }
     if (btnLabel === 'previous') {
       // setPostNumber(postNumber - 1);
-      router.push(data[postNumber-1].link)
+      // router.push(data[postNumber-1].link)
+      router.back()
     }
   };
 
