@@ -12,8 +12,8 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <AppLayout className='font-lex py-0'>
-        <div className='w-full flex flex-col justify-center items-center flex-1 bg-blue-'>
+      <AppLayout className='font-lex py-0 items-center justify-center'>
+        <div className='w-full h-full grid place-items-center'>
           <h1 className='flex flex-col font-bold'>
             <span className='text-4xl lg:text-6xl'>Hi,</span>
             <span className='text-4xl lg:text-6xl'>

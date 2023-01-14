@@ -1,4 +1,8 @@
+import { useRouter } from 'next/router';
+import { userAgent } from 'next/server';
 import { IconType } from 'react-icons/lib';
+import { reactBlogData as data } from '../../../data/react-docs';
+
 
 interface Props {
   icon: IconType;
@@ -9,14 +13,17 @@ interface Props {
 }
 function NavButton(props: Props) {
   const { btnLabel, titlePreview, postNumber, setPostNumber } = props;
+  const router = useRouter();
 
   const handleClick = () => {
     console.log(postNumber);
     if (btnLabel === 'next') {
-      setPostNumber(postNumber + 1);
+      // setPostNumber(postNumber + 1);
+      router.push(data[postNumber+1].link)
     }
     if (btnLabel === 'previous') {
-      setPostNumber(postNumber - 1);
+      // setPostNumber(postNumber - 1);
+      router.push(data[postNumber-1].link)
     }
   };
 

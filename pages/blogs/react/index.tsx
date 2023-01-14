@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import AppLayout from '../../components/layouts/AppLayout';
-import BlogNavigation from '../../components/specific/blog/blog-navigation';
-import { reactBlogData } from '../../data/react-docs';
+import AppLayout from '../../../components/layouts/AppLayout';
+import BlogNavigation from '../../../components/specific/blog/blog-navigation';
+import { reactBlogData } from '../../../data/react-docs';
 
 function React() {
   const [postNumber, setPostNumber] = useState(0);

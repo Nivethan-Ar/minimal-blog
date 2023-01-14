@@ -19,7 +19,7 @@ function AppLayout(props: Props) {
         <section
           className={`${className} flex flex-col pt-20 text-justify font-main font-normal border-gray-800`}
         >
-          {children}
+          <div className='flex-1'>{children}</div>
           <Footer />
         </section>
         <Navigation />

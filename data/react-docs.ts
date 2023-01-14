@@ -2,9 +2,10 @@ import { Data } from '../types';
 
 // const home: Data = {};
 
-const installation: Data = {
+export const installation: Data = {
   section: 'getting started',
   title: 'installation',
+  link: 'installation',
   body: [
     {
       subHeading: 'React is a UI library & not a framework',
@@ -74,9 +75,10 @@ const installation: Data = {
   ],
 };
 
-const quick: Data = {
+export const quick: Data = {
   section: 'getting started',
   title: 'quick start',
+  link: 'quick-start',
   body: [
     {
       subHeading:
@@ -111,39 +113,8 @@ const quick: Data = {
       subHeading: 'use curly braces to escape into JavaScript',
       paragraphs: [
         {
-          __html: 'to display a variable within JSX or to pass a variable as a prop we need to use curly braces instead of quotes.',
-        },
-      ],
-    },
-    {
-      subHeading: '',
-      paragraphs: [
-        {
-          __html: '',
-        },
-      ],
-    },
-    {
-      subHeading: '',
-      paragraphs: [
-        {
-          __html: '',
-        },
-      ],
-    },
-    {
-      subHeading: '',
-      paragraphs: [
-        {
-          __html: '',
-        },
-      ],
-    },
-    {
-      subHeading: '',
-      paragraphs: [
-        {
-          __html: '',
+          __html:
+            'to display a variable within JSX or to pass a variable as a prop we need to use curly braces instead of quotes.',
         },
       ],
     },
