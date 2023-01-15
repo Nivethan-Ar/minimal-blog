@@ -2,6 +2,12 @@ import { Data } from '../types';
 
 // const home: Data = {};
 
+const intro = {
+  section: 'getting started',
+  title: 'introduction',
+  link: 'react',
+};
+
 export const installation: Data = {
   section: 'getting started',
   title: 'installation',
@@ -121,4 +127,4 @@ export const quick: Data = {
   ],
 };
 
-export const reactBlogData: Data[] = [installation, quick];
+export const reactBlogData = [intro, installation, quick];

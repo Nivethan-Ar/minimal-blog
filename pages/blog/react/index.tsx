@@ -4,7 +4,7 @@ import AppLayout from '../../../components/layouts/AppLayout';
 import BlogNavigation from '../../../components/specific/blog/blog-navigation';
 import { reactBlogData } from '../../../data/react-docs';
 
-function React() {
+function ReactNewDocsSeries() {
   const [postNumber, setPostNumber] = useState(0);
   const blog = reactBlogData[postNumber];
 
@@ -17,35 +17,59 @@ function React() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <AppLayout className='font-main font-normal border-gray-800'>
-        <div className='flex flex-col gap-y-6'>
-          <div>
-            <p>Jan 6, 2023</p>
-            <h1 className='mt-1 text-2xl font-main font-bold uppercase'>
-              Section 1: {blog.section}
-            </h1>
-          </div>
+      <AppLayout className='font-main font-normal border-gray-800 overflow-'>
+        <div className='flex flex-col justify-center items-start gap-y-6'>
+          <p>Jan 6, 2023</p>
+
+          <h1 className='text-2xl self-center uppercase font-bold mb-2 font-lex'>
+            React best Practices from fresh new React docs
+          </h1>
+
           <h2 className='text-lg capitalize font-medium font-sub  '>
-            {blog.title}
+            introduction
           </h2>
 
-          <div className='flex flex-col gap-y-6 text-justify'>
-            {blog.body.map((block, i) => (
-              <div key={i} className='relative'>
-                <h3 className={`text-xl mb-2 font-lex`}>{`${
-                  i + 1 + '. ' + block.subHeading
-                }`}</h3>
-                <div className='flex flex-col gap-y-4'>
-                  {block.paragraphs.map((paragraph, i) => (
-                    <div key={i} className='flex flex-col gap-y-2'>
-                      <p className='' dangerouslySetInnerHTML={paragraph} />
-                      <code className=''>{paragraph.code}</code>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div className='flex-1 mb-8 flex flex-col gap-y-6'>
+            <p>
+              React is a popular JavaScript library known for its un-opinionated
+              nature, which can be both a blessing and a curse for beginners. On
+              one hand, it gives developers the freedom to structure their code
+              in the way that makes the most sense for their specific use case.
+              On the other hand, it can also make it difficult for beginners to
+              know where to start and how to structure their code effectively.
+              The new React documentation, which has been in the making for 2
+              years, takes this into account by focusing on functional
+              components, providing a clear and consistent approach to building
+              React applications.
+            </p>
+
+            <p>
+              In this blog post, we are going to explore the new React
+              documentation, which has been recently released. The new docs
+              include a focus on functional components, which can be a powerful
+              tool for building UIs with React. I have gone through the new docs
+              word by word and break down best practices for building UIs with
+              React. Additionally, the use of functional components enables
+              developers to take advantage of the latest React features such as
+              hooks, which can help improve code reusability and performance.
+            </p>
+            <p>
+              Whether you&apos;re a beginner or an experienced React developer,
+              this blog post will be a valuable resource for building UIs with
+              React. The new documentation provides clear and concise
+              information on how to effectively use functional components to
+              build powerful and efficient UIs. By going through the new docs
+              word by word, I have been able to provide readers with a
+              comprehensive breakdown of the best practices and latest features
+              outlined in the new React documentation. So, whether you&apos;re
+              looking to improve your existing React skills or just getting
+              started with the library, this blog post will be an essential
+              resource for building UIs with React.
+            </p>
           </div>
+        </div>
+
+        <div>
           <BlogNavigation
             postNumber={postNumber}
             setPostNumber={setPostNumber}
@@ -56,4 +80,4 @@ function React() {
   );
 }
 
-export default React;
+export default ReactNewDocsSeries;
