@@ -14,21 +14,35 @@ function Quick() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Blog data={data}>
-        <ContentBlock subHeading='1. React is a UI library & not a framework'>
+        <ContentBlock subHeading='1. For JavaScript related references docs recommends MDN and javascript.info'>
           <p className=''>
-            react docs starting with a clarification that what react is doing is
-            breaking ui code into pieces called components and not routing and
-            data management which is done by a framework for example nextjs
+            MDN is my go to place for JavaScript & CSS related references,
+            javascript.info was new to me and i also recommend to check their
+            work
           </p>
         </ContentBlock>
 
-        <ContentBlock subHeading='New docs still recommends Create React App(CRA) for learning'>
+        <ContentBlock subHeading='2. Prefer JSX/TSX over HTML'>
           <p>
-            They mentions the limitations of CRA, like providing a bad
-            performance, slower loading time, slower builds. i&apos;m sure why
-            you need CRA even for learning on 2023 instead of a tool like vite
-            but fortunatily the new docs also mentions alternatives like vite
-            and parcel
+            JSX is stricter than HTML for example you must return only one
+            parent in your React component or you need to use a JSX Fragment
+          </p>
+        </ContentBlock>
+
+        <ContentBlock subHeading='3. React has no advise on adding CSS to a component except the attribute naming'>
+          <p>
+            you can&apos;t use class attribute like HTML since class is a
+            reserved keyword in JavaScript so you need use the className
+            attribute to add CSS, and they also mentions style attribute when
+            your styles depend on JavaScript variables except these points React
+            has nothing to say about how you should add css for a component
+          </p>
+        </ContentBlock>
+
+        <ContentBlock subHeading='4. use curly braces to escape into JavaScript'>
+          <p>
+            to display a variable within JSX or to pass a variable as a prop we
+            need to use curly braces instead of quotes.
           </p>
         </ContentBlock>
       </Blog>
