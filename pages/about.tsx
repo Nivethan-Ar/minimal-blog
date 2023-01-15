@@ -13,25 +13,26 @@ function About() {
       </Head>
 
       <AppLayout className='pb-0'>
-        <div className='w-full text-lg flex-1 h-full flex flex-col justify-center items-start gap-y-6'>
+        <div className='w-full flex-1 h-full flex flex-col items-start justify-center gap-y-6'>
           <h1 className='text-2xl uppercase font-bold mb-2 font-lex'>about</h1>
           <h3>Hey there!</h3>
           <p>
             Welcome to my personal blog! My name is Nivethan and I am a
             full-stack software engineer with over 1 year of experience in the
             IT industry. I specialize in technologies such as Node.js, React,
-            Next.js, and Nest.js, I have a strong background in web
-            development. I am passionate about all new technologies and I&apos;m
-            always try to find better ways to solve a software related problem.
+            Next.js, and Nest.js, I have a strong background in web development.
+            I am passionate about all new technologies and I&apos;m always try
+            to find better ways to solve a software related problem.
           </p>
           <p>
-            In this blog, you will find articles on a variety of topics related to
-            software development, such as new technologies, best practices, and
-            tips on how to improve your skills. I will be sharing my experience
-            working with different technologies and discussing the challenges
-            and solutions I have encountered. My goal is to provide valuable
-            insights on the latest trends and technologies in the industry and
-            to help others develop their skills as software developers.
+            In this blog, you will find articles on a variety of topics related
+            to software development, such as new technologies, best practices,
+            and tips on how to improve your skills. I will be sharing my
+            experience working with different technologies and discussing the
+            challenges and solutions I have encountered. My goal is to provide
+            valuable insights on the latest trends and technologies in the
+            industry and to help others develop their skills as software
+            developers.
           </p>
           <p>
             As a software engineer, I believe that continuous learning and
