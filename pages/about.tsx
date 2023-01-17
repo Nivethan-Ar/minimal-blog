@@ -13,7 +13,7 @@ function About() {
       </Head>
 
       <AppLayout className='pb-0'>
-        <div className='w-full flex-1 h-full flex flex-col items-start justify-center gap-y-6'>
+        <div className='w-full text-justify flex-1 h-full flex flex-col items-start justify-center gap-y-6 2xl:max-w-2xl 2xl:ml-auto 2xl:mr-auto'>
           <h1 className='text-2xl uppercase font-bold mb-2 font-lex'>about</h1>
           <h3>Hey there!</h3>
           <p>
@@ -46,7 +46,7 @@ function About() {
 
           {/* <h4 className='self-end text-xl font-bold font-lex uppercase'>A.NivethaN</h4> */}
           <Image
-            className='self-end mt-2'
+            className='self-end mt-8'
             src='/images/nivethan-white.png'
             alt='author name'
             width={130}

@@ -17,8 +17,8 @@ function ReactNewDocsSeries() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <AppLayout className='font-main font-normal border-gray-800 overflow-'>
-        <div className='flex flex-col justify-center items-start gap-y-6'>
+      <AppLayout className='font-main font-normal border-gray-800 overflow- 2xl:max-w-2xl 2xl:ml-auto 2xl:mr-auto'>
+        <div className='flex flex-col justify-center items-start gap-y-6 2xl:max-w-2xl 2xl:ml-auto 2xl:mr-auto'>
           <p>Jan 6, 2023</p>
 
           <h1 className='text-2xl self-center uppercase font-bold mb-2 font-lex'>
@@ -29,7 +29,7 @@ function ReactNewDocsSeries() {
             introduction
           </h2>
 
-          <div className='flex-1 mb-8 flex flex-col gap-y-6'>
+          <div className='flex-1 mb-8 flex flex-col gap-y-6 text-justify '>
             <p>
               React is a popular JavaScript library known for its un-opinionated
               nature, which can be both a blessing and a curse for beginners. On

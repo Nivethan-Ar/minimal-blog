@@ -17,7 +17,7 @@ function AppLayout(props: Props) {
         <SocialLinks />
 
         <section
-          className={`${className} flex flex-col pt-20 text-j font-main font-normal px-6 lg:px-0`}
+          className={`${className} flex flex-col pt-20 font-main font-normal px-6 lg:px-0`}
         >
           <div className='flex-1 mb-10'>{children}</div>
           <Footer />

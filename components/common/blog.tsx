@@ -14,7 +14,7 @@ function Blog(props: Props) {
   console.log(postNumber);
 
   return (
-    <AppLayout className='font-main font-normal border-gray-800'>
+    <AppLayout className='font-main font-normal border-gray-800 2xl:max-w-2xl 2xl:ml-auto 2xl:mr-auto'>
       <div className='flex flex-col gap-y-6 h-full'>
         <div>
           <p>Jan 6, 2023</p>

@@ -12,9 +12,9 @@ export default function Blog() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <AppLayout className='font-lex'>
+      <AppLayout className='font-lex '>
         <div className='h-full'>
-          <div className='grid grid-cols-1 gap-x-12 gap-y-12'>
+          <div className='grid grid-cols-1 gap-x-12 gap-y-12 '>
             <PostCard />
           </div>
         </div>
