@@ -10,7 +10,7 @@ function ContentBlock(props: Props) {
 
   return (
     <div className='relative'>
-      <h3 className={`text-xl mb-2 font-lex`}>{subHeading}</h3>
+      <li className={`text-xl mb-2 font-lex`}>{subHeading}</li>
 
       <div className='flex flex-col gap-y-4'>
         <div className='flex flex-col gap-y-2'>{children}</div>

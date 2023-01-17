@@ -13,7 +13,7 @@ function Installation() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Blog data={data}>
-        <ContentBlock subHeading='1. React is a UI library & not a framework'>
+        <ContentBlock subHeading='React is a UI library & not a framework'>
           <p className=''>
             react docs starting with a clarification that what react is doing is
             breaking ui code into pieces called components and not routing and
@@ -21,7 +21,7 @@ function Installation() {
           </p>
         </ContentBlock>
 
-        <ContentBlock subHeading='2. New docs still recommends Create React App(CRA) for learning'>
+        <ContentBlock subHeading='New docs still recommends Create React App(CRA) for learning'>
           <p>
             They mentions the limitations of CRA, like providing a bad
             performance, slower loading time, slower builds. i&apos;m sure why

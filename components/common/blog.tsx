@@ -26,7 +26,7 @@ function Blog(props: Props) {
           {data.title}
         </h2>
 
-        <div className='flex flex-col gap-y-6 text-justify flex-1'>{children}</div>
+        <ol className='flex list-decimal list-inside flex-col gap-y-6 text-justify flex-1'>{children}</ol>
         <BlogNavigation postNumber={postNumber} setPostNumber={setPostNumber} />
       </div>
     </AppLayout>

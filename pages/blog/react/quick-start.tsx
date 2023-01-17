@@ -14,7 +14,7 @@ function Quick() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Blog data={data}>
-        <ContentBlock subHeading='1. For JavaScript related references docs recommends MDN and javascript.info'>
+        <ContentBlock subHeading='For JavaScript related references docs recommends MDN and javascript.info'>
           <p className=''>
             MDN is my go to place for JavaScript & CSS related references,
             javascript.info was new to me and i also recommend to check their
@@ -22,14 +22,14 @@ function Quick() {
           </p>
         </ContentBlock>
 
-        <ContentBlock subHeading='2. Prefer JSX/TSX over HTML'>
+        <ContentBlock subHeading='Prefer JSX/TSX over HTML'>
           <p>
             JSX is stricter than HTML for example you must return only one
             parent in your React component or you need to use a JSX Fragment
           </p>
         </ContentBlock>
 
-        <ContentBlock subHeading='3. React has no advise on adding CSS to a component except the attribute naming'>
+        <ContentBlock subHeading='React has no advise on adding CSS to a component except the attribute naming'>
           <p>
             you can&apos;t use class attribute like HTML since class is a
             reserved keyword in JavaScript so you need use the className
@@ -39,7 +39,7 @@ function Quick() {
           </p>
         </ContentBlock>
 
-        <ContentBlock subHeading='4. use curly braces to escape into JavaScript'>
+        <ContentBlock subHeading='use curly braces to escape into JavaScript'>
           <p>
             to display a variable within JSX or to pass a variable as a prop we
             need to use curly braces instead of quotes.
