@@ -3,7 +3,7 @@ import { FiMail } from 'react-icons/fi';
 
 export default function SocialLinks() {
   return (
-    <div className='place-self-center relative'>
+    <div className='hidden place-self-center relative lg:block'>
       <ul className='fixed top-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col gap-y-8 [&>li]:cursor-pointer [&>a>li]:bg-[#555555b5]'>
         <a
           href='https://www.linkedin.com/in/nivethan-me'

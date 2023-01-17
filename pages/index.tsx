@@ -21,7 +21,7 @@ export default function Home() {
               I&apos;M
               <span className=''> NIVETHAN </span>
             </span>
-            <span className='text-2xl font-medium capitalize text-right lg:text-xl'>
+            <span className='text-xl font-medium capitalize text-right lg:text-xl'>
               software engineer
             </span>
           </h1>

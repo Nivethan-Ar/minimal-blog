@@ -14,7 +14,7 @@ export function PostCard() {
         <p className='text-base'>
           Let&apos;s extract important points from new React docs.
         </p>
-        <Link href={'blog/react'}>
+        <Link className='w-fit' href={'blog/react'}>
           <button className='w-fit text-sm bg-gray-600 self-end px-4 py-1 rounded'>
             Read more
           </button>

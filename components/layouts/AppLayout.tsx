@@ -13,11 +13,11 @@ function AppLayout(props: Props) {
 
   return (
     <>
-      <main className='font- text-white bg-[#212121] min-h-screen grid grid-cols-[_2.5fr,_5fr,_2.5fr] grid-rows-1'>
+      <main className='font- text-white bg-[#212121] min-h-screen grid grid-cols-1 grid-rows-1 lg:grid-cols-[_2.5fr,_5fr,_2.5fr] lg:grid-rows-1'>
         <SocialLinks />
 
         <section
-          className={`${className} flex flex-col pt-20 text-justify font-main font-normal border-gray-800`}
+          className={`${className} flex flex-col pt-20 text-j font-main font-normal px-6 lg:px-0`}
         >
           <div className='flex-1 mb-10'>{children}</div>
           <Footer />
