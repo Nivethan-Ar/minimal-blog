@@ -22,11 +22,18 @@ function Blog(props: Props) {
             Section 1: {data.section}
           </h1>
         </div>
+
         <h2 className='text-lg capitalize font-medium font-sub  '>
           {data.title}
         </h2>
 
-        <ol className='flex list-decimal list-inside flex-col gap-y-6 text-justify flex-1'>{children}</ol>
+        <ol
+          className='flex list-decimal list-inside flex-col gap-y-6 text-justify flex-1
+        [&>*_a]:text-blue-400 [&>*_a]:underline [&>*_a]:underline-offset-4 [&>*_a]:'
+        >
+          {children}
+        </ol>
+
         <BlogNavigation postNumber={postNumber} setPostNumber={setPostNumber} />
       </div>
     </AppLayout>
