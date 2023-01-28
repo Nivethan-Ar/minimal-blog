@@ -17,15 +17,18 @@ export default function Navigation() {
     <>
       <nav className='place-self-center'>
         {/* Desktop Navigation */}
-        <ul className='fixed font top-1/2 -translate-y-1/2 -translate-x-1/2 hidden uppercase flex-col gap-y-12 lg:flex'>
-          <li className='hover:text-red-600'>
+        <ul className='fixed font-bold text-lg top-1/2 text-center -translate-y-1/2 -translate-x-1/2 hidden uppercase flex-col gap-y-12 lg:flex'>
+          <li className='hover:text-red-600 w-20 text-center group hover:tracking-wider transition-all duration-300'>
             <Link href={'/'}>home</Link>
+            <div className='hidden lg:block h-[1px] mt-2 bg-red-600 w-0 ml-auto mr-auto group-hover:w-full transition-all duration-300'/>
           </li>
-          <li className='hover:text-red-600'>
+          <li className='hover:text-red-600 w-20 text-center group hover:tracking-wider transition-all duration-300'>
             <Link href={'/about'}>about</Link>
+            <div className='hidden lg:block h-[1px] mt-2 bg-red-600 w-0 ml-auto mr-auto group-hover:w-full transition-all duration-300'/>
           </li>
-          <li className=' hover:text-red-600'>
+          <li className='hover:text-red-600 w-20 text-center group hover:tracking-wider transition-all duration-300'>
             <Link href={'/blog'}>blog</Link>
+            <div className='hidden lg:block h-[1px] mt-2 bg-red-600 w-0 ml-auto mr-auto group-hover:w-full transition-all duration-300'/>
           </li>
         </ul>
       </nav>
