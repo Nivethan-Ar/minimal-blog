@@ -125,6 +125,17 @@ function Quick() {
             prop to both buttons. now it will share and update together
           </p>
         </ContentBlock>
+
+        <ContentBlock subHeading='Breaking UI into pieces called components'>
+          <p>
+            Depending on their background they explains how you can split the UI into smaller pieces but one good technique they mentions is single responsibility principle, so your component should ideally do only one thing.
+          </p>
+        </ContentBlock>
+        <ContentBlock subHeading='Props vs State'>
+          <p>
+            Props and State are the 2 types of "model" data in React and They aren't same.
+          </p>
+        </ContentBlock>
       </Blog>
     </>
   );
