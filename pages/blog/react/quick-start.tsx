@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import { userAgent } from 'next/server';
 import Blog from '../../../components/common/blog';
 import ContentBlock from '../../../components/common/content-block';
 import { quick as data } from '../../../data/react-docs';
@@ -133,7 +131,7 @@ function Quick() {
         </ContentBlock>
         <ContentBlock subHeading='Props vs State'>
           <p>
-            Props and State are the 2 types of "model" data in React and They aren't same.
+            Props and State are the 2 types of &quot;model&quot; data in React and They aren&apos;t same.
           </p>
         </ContentBlock>
       </Blog>
